@@ -1,3 +1,25 @@
-# https://developers.cloudflare.com/workers/static-assets/headers
+# Security headers — applies to all routes
+/*
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=(), browsing-topics=()
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  Cross-Origin-Embedder-Policy: credentialless
+  X-XSS-Protection: 1; mode=block
+  X-Robots-Tag: index, follow, noarchive
+  X-Permitted-Cross-Domain-Policies: none
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self' https://app.dangguin.com; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; upgrade-insecure-requests
+
+# Long-cache static assets
 /_next/static/*
   Cache-Control: public,max-age=31536000,immutable
+
+/fonts/*
+  Cache-Control: public,max-age=31536000,immutable
+
+# HTML — short cache, must revalidate
+/*.html
+  Cache-Control: public,max-age=0,must-revalidate
