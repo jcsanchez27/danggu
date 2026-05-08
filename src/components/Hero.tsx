@@ -70,9 +70,11 @@ export default function Hero() {
 				</h1>
 
 				<p className="mt-6 text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-					라이브 경기 베팅과 토너먼트, 선수 프로필과 갤러리까지.
+					가장 빠른 스코어 업데이트
 					<br className="hidden sm:block" />
-					한국 당구 커뮤니티 팬들이 모이는 단 하나의 플랫폼.
+					가장 즐거운 승부 예측
+					<br className="hidden sm:block" />
+					당구 데이터의 모든것.
 				</p>
 
 				<div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">

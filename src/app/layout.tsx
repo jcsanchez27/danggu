@@ -10,9 +10,9 @@ const notoSansKR = Noto_Sans_KR({
 	display: "swap",
 });
 
-const TITLE = `당구 커뮤니티 | ${SITE_NAME_KO} (${SITE_NAME}) — 한국 당구 플랫폼`;
+const TITLE = `${SITE_NAME_KO} Dangguin | 한국 당구 커뮤니티 플랫폼`;
 const DESCRIPTION =
-	"당구 커뮤니티 당구인(Danggu IN) — 한국 최고의 당구 커뮤니티. PBA·LPBA 라이브 경기, 3쿠션·포켓볼 토너먼트, 선수 프로필, 갤러리, 베팅, 동호인 매치까지 한국 당구 팬을 위한 통합 플랫폼입니다.";
+	"당구인(Dangguin)은 한국 최고의 당구 커뮤니티 플랫폼입니다. PBA·LPBA 라이브 경기, 3쿠션·포켓볼 토너먼트, 선수 프로필, 갤러리, 베팅, 동호인 매치까지 한국 당구 팬을 위한 통합 플랫폼입니다.";
 
 export const metadata: Metadata = {
 	metadataBase: new URL(SITE_URL),
@@ -22,9 +22,12 @@ export const metadata: Metadata = {
 	},
 	description: DESCRIPTION,
 	keywords: [
+		"당구인",
+		"Dangguin",
+		"Dangguin 당구인",
+		"당구인 Dangguin",
 		"당구 커뮤니티",
 		"한국 당구 커뮤니티",
-		"당구인",
 		"Danggu IN",
 		"당구",
 		"빌리어드",
@@ -114,10 +117,10 @@ const faqJsonLd = {
 	mainEntity: [
 		{
 			"@type": "Question",
-			name: "당구 커뮤니티 당구인(Danggu IN)은 무엇인가요?",
+			name: "당구 커뮤니티 당구인(Dangguin)은 무엇인가요?",
 			acceptedAnswer: {
 				"@type": "Answer",
-				text: "당구인(Danggu IN)은 한국 당구 팬을 위한 통합 커뮤니티 플랫폼입니다. PBA·LPBA 라이브 경기, 3쿠션·포켓볼 토너먼트, 선수 프로필, 갤러리, 베팅, 동호인 매치를 한 곳에서 즐길 수 있습니다.",
+				text: "당구인(Dangguin)은 한국 당구 팬을 위한 통합 커뮤니티 플랫폼입니다. PBA·LPBA 라이브 경기, 3쿠션·포켓볼 토너먼트, 선수 프로필, 갤러리, 베팅, 동호인 매치를 한 곳에서 즐길 수 있습니다.",
 			},
 		},
 		{
@@ -154,7 +157,7 @@ const jsonLd = {
 			"@type": "Organization",
 			"@id": `${SITE_URL}/#organization`,
 			name: SITE_NAME,
-			alternateName: SITE_NAME_KO,
+			alternateName: [SITE_NAME_KO, "Danggu IN"],
 			url: SITE_URL,
 			logo: `${SITE_URL}/favicon.ico`,
 			sameAs: [
@@ -184,7 +187,7 @@ const jsonLd = {
 			"@type": "WebApplication",
 			"@id": `${APP_URL}/#webapp`,
 			name: SITE_NAME,
-			alternateName: SITE_NAME_KO,
+			alternateName: [SITE_NAME_KO, "Danggu IN"],
 			url: APP_URL,
 			applicationCategory: "SportsApplication",
 			operatingSystem: "Web",

@@ -2,11 +2,10 @@ import CTAButton from "./CTAButton";
 import { TIER_BADGES } from "@/constants";
 
 const TIER_ORDER: (keyof typeof TIER_BADGES)[] = [
-	"Bronze",
-	"Silver",
-	"Gold",
-	"Platinum",
+	"Pearl",
+	"Sapphire",
 	"Emerald",
+	"Ruby",
 	"Diamond",
 ];
 
@@ -30,7 +29,7 @@ export default function CommunityTiers() {
 					</p>
 				</div>
 
-				<ul className="mt-14 grid grid-cols-3 sm:grid-cols-6 gap-4 sm:gap-6">
+				<ul className="mt-14 grid grid-cols-2 sm:grid-cols-5 gap-4 sm:gap-6">
 					{TIER_ORDER.map((key) => {
 						const t = TIER_BADGES[key];
 						return (

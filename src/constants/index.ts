@@ -1,6 +1,6 @@
 export const APP_URL = "https://app.dangguin.com";
 export const SITE_URL = "https://dangguin.com";
-export const SITE_NAME = "Danggu IN";
+export const SITE_NAME = "Dangguin";
 export const SITE_NAME_KO = "당구인";
 export const SITE_TAGLINE = "한국 당구 커뮤니티";
 
@@ -27,15 +27,14 @@ export const FEATURES: readonly Feature[] = [
 ] as const;
 
 export const TIER_BADGES: Record<
-	"Bronze" | "Silver" | "Gold" | "Platinum" | "Emerald" | "Diamond",
+	"Pearl" | "Sapphire" | "Emerald" | "Ruby" | "Diamond",
 	{ gradient: string; label: string }
 > = {
-	Bronze: { gradient: "from-amber-600 to-amber-800", label: "브론즈" },
-	Silver: { gradient: "from-gray-400 to-gray-600", label: "실버" },
-	Gold: { gradient: "from-yellow-400 to-yellow-600", label: "골드" },
-	Platinum: { gradient: "from-cyan-400 to-blue-500", label: "플래티넘" },
-	Emerald: { gradient: "from-emerald-400 to-green-600", label: "에메랄드" },
-	Diamond: { gradient: "from-blue-400 to-indigo-600", label: "다이아몬드" },
+	Pearl: { gradient: "from-slate-100 to-slate-300", label: "Pearl" },
+	Sapphire: { gradient: "from-blue-500 to-indigo-700", label: "Sapphire" },
+	Emerald: { gradient: "from-emerald-400 to-green-600", label: "Emerald" },
+	Ruby: { gradient: "from-rose-500 to-red-700", label: "Ruby" },
+	Diamond: { gradient: "from-cyan-300 to-sky-600", label: "Diamond" },
 };
 
 export const GALLERY_ITEMS = [
