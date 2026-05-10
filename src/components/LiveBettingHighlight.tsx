@@ -1,9 +1,7 @@
 import CTAButton from "./CTAButton";
 
 const BULLETS = [
-	{ title: "실시간 배당률", desc: "경기 흐름에 따라 즉시 갱신되는 라이브 배당" },
 	{ title: "Star Points 가상 베팅", desc: "현금이 아닌 가상 포인트로 안전하게 즐기는 베팅" },
-	{ title: "자동 정산", desc: "경기 종료 즉시 결과에 따라 포인트가 자동 지급" },
 	{ title: "라이브 채팅", desc: "다른 팬들과 실시간으로 응원하고 의견을 나누세요" },
 ];
 
@@ -96,20 +94,32 @@ export default function LiveBettingHighlight() {
 							</div>
 						</div>
 
-						<div className="grid grid-cols-2 gap-3">
-							<div className="rounded-xl border border-sky-200 bg-sky-50 p-4 text-center">
-								<div className="text-xs text-gray-600 mb-1">선수 A 승</div>
-								<div className="text-2xl font-black text-sky-700 tabular-nums">1.85</div>
-							</div>
-							<div className="rounded-xl border border-gray-200 bg-gray-50 p-4 text-center">
-								<div className="text-xs text-gray-600 mb-1">선수 B 승</div>
-								<div className="text-2xl font-black text-gray-900 tabular-nums">2.10</div>
-							</div>
+						<div className="mb-3 flex items-center justify-between text-xs">
+							<span className="text-gray-600">
+								참가비 <span className="font-bold text-gray-900 tabular-nums">100 P</span>
+							</span>
+							<span className="text-gray-500">잔여 시간 04:21</span>
 						</div>
 
-						<div className="mt-5 flex items-center justify-between text-xs text-gray-500">
-							<span>참여 베팅 1,234건</span>
-							<span>잔여 시간 04:21</span>
+						<div className="grid grid-cols-2 gap-3">
+							<button
+								type="button"
+								className="rounded-xl border border-sky-200 bg-sky-50 p-4 text-center transition-colors hover:bg-sky-100"
+							>
+								<div className="text-xs text-gray-600 mb-1">선수 A 베팅</div>
+								<div className="text-2xl font-black text-sky-700 tabular-nums">+185 P</div>
+							</button>
+							<button
+								type="button"
+								className="rounded-xl border border-gray-200 bg-gray-50 p-4 text-center transition-colors hover:bg-gray-100"
+							>
+								<div className="text-xs text-gray-600 mb-1">선수 B 베팅</div>
+								<div className="text-2xl font-black text-gray-900 tabular-nums">+210 P</div>
+							</button>
+						</div>
+
+						<div className="mt-5 text-xs text-gray-500">
+							참여 베팅 1,234건
 						</div>
 					</div>
 				</div>

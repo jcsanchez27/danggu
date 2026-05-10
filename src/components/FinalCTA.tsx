@@ -21,9 +21,6 @@ export default function FinalCTA() {
 				>
 					지금 바로 시작하세요
 				</h2>
-				<p className="mt-4 text-lg sm:text-xl text-sky-50">
-					무료 가입 후 1,000 포인트를 즉시 받아보세요
-				</p>
 				<div className="mt-8">
 					<CTAButton variant="secondary" className="!text-lg !px-8 !py-4">
 						앱으로 이동

@@ -62,7 +62,7 @@ export default function Hero() {
 					id="hero-heading"
 					className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-gray-900"
 				>
-					한국 당구 커뮤니티의 모든 것,
+					당구 커뮤니티의 모든 것,
 					<br />
 					<span className="bg-gradient-to-r from-sky-500 to-sky-700 bg-clip-text text-transparent">
 						한 곳에서
@@ -74,7 +74,7 @@ export default function Hero() {
 					<br className="hidden sm:block" />
 					가장 즐거운 승부 예측
 					<br className="hidden sm:block" />
-					당구 데이터의 모든것.
+					당구 데이터의 모든것
 				</p>
 
 				<div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -88,10 +88,6 @@ export default function Hero() {
 						더 알아보기
 					</a>
 				</div>
-
-				<p className="mt-6 text-sm text-gray-600">
-					무료 가입 · 즉시 1,000 포인트 지급
-				</p>
 			</div>
 		</section>
 	);
