@@ -62,10 +62,11 @@ export default function Hero() {
 					id="hero-heading"
 					className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-gray-900"
 				>
-					당구 커뮤니티의 모든 것,
-					<br />
 					<span className="bg-gradient-to-r from-sky-500 to-sky-700 bg-clip-text text-transparent">
-						한 곳에서
+						당구인
+					</span>
+					<span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-4 font-extrabold text-gray-700">
+						당구 커뮤니티의 모든 것, 한 곳에서
 					</span>
 				</h1>
 

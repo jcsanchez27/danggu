@@ -10,9 +10,9 @@ const notoSansKR = Noto_Sans_KR({
 	display: "swap",
 });
 
-const TITLE = `${SITE_NAME_KO} Dangguin | 한국 당구 커뮤니티 플랫폼`;
+const TITLE = `당구인 Dangguin – 한국 당구 커뮤니티 플랫폼 | ${SITE_NAME_KO}`;
 const DESCRIPTION =
-	"당구인(Dangguin)은 한국 최고의 당구 커뮤니티 플랫폼입니다. PBA·LPBA 라이브 경기, 3쿠션·포켓볼 토너먼트, 선수 프로필, 갤러리, 베팅, 동호인 매치까지 한국 당구 팬을 위한 통합 플랫폼입니다.";
+	"당구인(Dangguin)은 한국 최고의 당구 커뮤니티 플랫폼입니다. 당구인에서 PBA·LPBA 라이브 경기, 3쿠션·포켓볼 토너먼트, 선수 프로필, 갤러리, 베팅, 동호인 매치까지 한국 당구 팬을 위한 모든 것을 만나보세요. 당구인 - 당구 커뮤니티의 모든 것.";
 
 export const metadata: Metadata = {
 	metadataBase: new URL(SITE_URL),
